@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
@@ -23,7 +23,7 @@ public class Application {
 
             final String[] beanNames = ctx.getBeanDefinitionNames();
             Arrays.sort(beanNames);
-            for (final String beanName : beanNames) {
+            for (String beanName : beanNames) {
                 System.out.println(beanName);
             }
 
