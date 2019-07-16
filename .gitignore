@@ -1,2 +1,8 @@
 *.iml
 	.idea/*
+.idea
+build
+.gradle
+gradle
+logs
+out
